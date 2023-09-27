@@ -18,8 +18,6 @@ public class SomaDeVetoresTest {
         int[] resultadoEsperado = {10, 56, 10, 50, 10};
         assertThat(calculadora.getResultado()).isEqualTo(resultadoEsperado);
 
-
-    org.junit.jupiter.api.Assertions.fail();
     }
 
 }
