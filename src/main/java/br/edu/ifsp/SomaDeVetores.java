@@ -31,7 +31,7 @@ public class SomaDeVetores {
     }
 
     public void imprimirResultado() {
-        System.out.print("Saída = ");
+        System.out.print("Saida = ");
         for (int i = 0; i < C.length; i++) {
             System.out.print(C[i]);
             if (i < C.length - 1) {

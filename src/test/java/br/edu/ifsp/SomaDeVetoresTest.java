@@ -22,6 +22,7 @@ public class SomaDeVetoresTest {
         calculadora.calcularSoma();
         int[] resultadoEsperado = {10, 56, 10, 50, 10};
         assertThat(calculadora.getResultado()).isEqualTo(resultadoEsperado);
+        calculadora.imprimirResultado();
     }
 
     @Test
@@ -32,5 +33,18 @@ public class SomaDeVetoresTest {
         calculadora.calcularSoma();
         int[] resultadoEsperado = {90, 50, 10, -30, -70};
         assertThat(calculadora.getResultado()).isEqualTo(resultadoEsperado);
+        calculadora.imprimirResultado();
+    }
+    
+    @Test
+    @DisplayName("testSomaDeVetoresValoresZerados")
+    void testSomaDeVetoresValoresZerados(){
+        calculadora.criarVetorA(0, 0, 0, 0, 0);
+        calculadora.criarVetorB(0, 0, 0, 0, -0);
+        calculadora.calcularSoma();
+        int[] resultadoEsperado = {0, 0, 0, 0, 0};
+        assertThat(calculadora.getResultado()).isEqualTo(resultadoEsperado);
+        calculadora.imprimirResultado();
+
     }
 }
