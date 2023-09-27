@@ -20,13 +20,10 @@ public class SomaDeVetores {
         B[4] = valor5;
     }
 
-    public void calcularSoma() {
+    public int[] calcularSoma() {
         for (int i = 0; i < A.length; i++) {
             C[i] = A[i] + B[i];
         }
-    }
-
-    public int[] getResultado() {
         return C;
     }
 
